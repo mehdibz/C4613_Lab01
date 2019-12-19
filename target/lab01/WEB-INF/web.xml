@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+
+	
+	<context-param>
+        <param-name>log4j-config-location</param-name>
+        <param-value>log4j2.xml</param-value>
+    </context-param>
+    
+	<servlet>
+		<servlet-name>GreetingServlet</servlet-name>
+		<servlet-class>ca.bcit.comp4613.lab01.controller.GreetingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GreetingServlet</servlet-name>
+		<url-pattern>/greeting</url-pattern>
+	</servlet-mapping>
+
+
+	<context-param>
+		<param-name>instruction</param-name>
+		<param-value>Type your first name and press "Submit"</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>greeting</param-name>
+		<param-value>Welcome to My Servlet Pages!</param-value>
+	</context-param>
+	<welcome-file-list>
+		<welcome-file>greeting</welcome-file>
+	</welcome-file-list>
+</web-app>

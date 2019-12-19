@@ -1,0 +1,6 @@
+ca\bcit\comp4613\lab01\data\UserDaoImpl.class
+ca\bcit\comp4613\lab01\services\UserServices.class
+ca\bcit\comp4613\lab01\domain\User.class
+ca\bcit\comp4613\lab01\controller\GreetingServlet.class
+ca\bcit\comp4613\lab01\services\UserServicesImpl.class
+ca\bcit\comp4613\lab01\data\UserDao.class
